@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hobby | Game</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="game-page">
+
+<header class="site-header compact-header">
+  <nav class="top-nav">
+    <a class="logo" href="home.html">My Hobby</a>
+    <ul class="nav-links">
+      <li><a href="home.html">𝖧𝗈𝗆𝖾</a></li>
+      <li><a href="reviews.html">𝖱𝖾𝗏𝗂𝖾𝗐𝗌</a></li>
+      <li><a href="about.html">𝖠𝖻𝗈𝗎𝗍</a></li>
+      <li><a href="game.html" aria-current="page">𝖦𝖺𝗆𝖾</a></li>
+    </ul>
+  </nav>
+
+  <section class="panel hero compact-hero game-hero">
+    <h1>Movie Games Zone</h1>
+    <p>Play the memory challenge and test your movie knowledge!</p>
+  </section>
+</header>
+
+<main>
+
+  <!-- ================= MEMORY GAME ================= -->
+  <section class="section panel game-panel">
+    <h2>🧠 Movie Memory Match</h2>
+
+    <div class="scoreboard">
+      <p><strong>Time:</strong> <span id="memory-time">45</span>s</p>
+      <p><strong>Moves:</strong> <span id="memory-moves">0</span></p>
+      <p><strong>Matches:</strong> <span id="memory-matches">0</span>/8</p>
+      <p><strong>Best:</strong> <span id="memory-best">-</span></p>
+    </div>
+
+    <div class="button-row">
+      <button id="memory-start" class="btn btn-primary">Start Game</button>
+      <button id="memory-reset" class="btn btn-secondary">Reset</button>
+    </div>
+
+    <p id="memory-message">Press Start Game to begin.</p>
+    <div id="memory-grid" class="memory-grid"></div>
+  </section>
+
+
+  <!-- ================= MOVIE QUIZ ================= -->
+  <section class="section panel game-panel">
+    <h2>🎬 Movie Quote Quiz</h2>
+
+    <div class="quiz-box">
+      <p id="quiz-question">Click Start Quiz to begin!</p>
+
+      <div id="quiz-options" class="quiz-options"></div>
+
+      <div class="button-row">
+        <button id="quiz-start" class="btn btn-primary">Start Quiz</button>
+        <button id="quiz-next" class="btn btn-secondary" disabled>Next</button>
+      </div>
+
+      <p id="quiz-score">Score: 0</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>𝘾𝙧𝙚𝙖𝙩𝙚𝙙 𝙗𝙮 𝙉𝙖𝙣𝙣𝙖𝙥𝙖𝙩 𝙅𝙖𝙧𝙤𝙚𝙣𝙩𝙚𝙚𝙧𝙖𝙬𝙤𝙣𝙜 | 2025</p>
+  <p>
+    <a href="home.html">𝖧𝗈𝗆𝖾</a> |
+    <a href="reviews.html">𝖱𝖾𝗏𝗂𝖾𝗐𝗌</a> |
+    <a href="about.html">𝖠𝖻𝗈𝗎𝗍</a> |
+    <a href="game.html">𝖦𝖺𝗆𝖾</a>
+  </p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Favorite Movies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="reviews-page">
+
+<nav class="top-nav" aria-label="Main navigation">
+  <a class="logo" href="home.html">My Hobby</a>
+  <ul class="nav-links">
+    <li><a href="home.html">𝖧𝗈𝗆𝖾</a></li>
+    <li><a href="reviews.html" aria-current="page">𝖱𝖾𝗏𝗂𝖾𝗐𝗌</a></li>
+    <li><a href="about.html">𝖠𝖻𝗈𝗎𝗍</a></li>
+    <li><a href="game.html">𝖦𝖺𝗆𝖾</a></li>
+  </ul>
+</nav>
+
+<header class="page-header">
+  <h1>My Favorite Movies & Series</h1>
+  <p>Discover the stories that have made me laugh, cry, and find inspiration. Click a poster to watch the teaser.</p>
+</header>
+<main class="netflix-layout">
+
+  <p class="click-hint">Tap or click any poster to see full details.</p>
+
+  <section class="review-stats" aria-label="Review highlights">
+    <article>
+      <h3>6 Picks</h3>
+      <p>Comfort dramas, fantasy worlds, and iconic fashion stories.</p>
+    </article>
+    <article>
+      <h3>Top Mood</h3>
+      <p>Feel-good romance with strong emotional storytelling.</p>
+    </article>
+    <article>
+      <h3>Best Time</h3>
+      <p>Late evening with snacks, dim lights, and headphones on.</p>
+    </article>
+  </section>
+
+  <!-- Dynamic Display Section -->
+  <section id="movie-display" class="movie-display hidden">
+    <div class="display-content">
+
+      <img id="display-image" class="display-poster" alt="Movie Poster">
+
+      <div class="display-text">
+        <h2 id="movie-title"></h2>
+        <p id="movie-category" class="category"></p>
+        <p id="movie-description"></p>
+        <a id="movie-link" target="_blank" class="watch-btn">Watch Teaser</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Poster Grid -->
+  <section class="poster-grid">
+
+    <div class="poster"
+      data-title="The Best Thing"
+      data-category="Romance • C-Drama"
+      data-description="This series became my ultimate stress-reliever. Soft, comforting and easy to love."
+      data-link="https://youtu.be/ozzqPJ4QPjY?si=bIDO93oYv-ThvLFg"
+      data-image="https://i.pinimg.com/736x/38/d3/2c/38d32c172d525e03932af594503e2bec.jpg">
+      <img src="https://i.pinimg.com/736x/38/d3/2c/38d32c172d525e03932af594503e2bec.jpg">
+      <div class="poster-info">
+        <h4>The Best Thing</h4>
+        <p>Click to view details</p>
+      </div>
+    </div>
+
+    <div class="poster"
+      data-title="Harry Potter"
+      data-category="Fantasy • Film Series"
+      data-description="A magical world I’ve loved since I was 7. It’s something I share with my dad."
+      data-link="https://www.youtube.com/watch?v=VyHV0BRtdxo"
+      data-image="https://i.pinimg.com/1200x/72/35/7c/72357ca6662af8f4ebaf764661858f44.jpg">
+      <img src="https://i.pinimg.com/1200x/72/35/7c/72357ca6662af8f4ebaf764661858f44.jpg">
+      <div class="poster-info">
+        <h4>Harry Potter</h4>
+        <p>Click to view details</p>
+      </div>
+    </div>
+
+    <div class="poster"
+      data-title="Business Proposal"
+      data-category="Romcom • K-Drama"
+      data-description="Funny, sweet, and stress-free. A perfect comfort romcom."
+      data-link="https://youtu.be/M-PHcxPyasA?si=MPd_yaAmJOb9R8_G"
+      data-image="https://i.pinimg.com/736x/57/82/26/5782267615795968f78e3727bb705ae7.jpg">
+      <img src="https://i.pinimg.com/736x/57/82/26/5782267615795968f78e3727bb705ae7.jpg">
+      <div class="poster-info">
+        <h4>Business Proposal</h4>
+        <p>Click to view details</p>
+      </div>
+    </div>
+
+    <div class="poster"
+      data-title="The Devil Wears Prada"
+      data-category="Fashion • Drama"
+      data-description="Iconic girl boss energy and unforgettable outfits."
+      data-link="https://www.youtube.com/watch?v=6ZOZwUQKu3E"
+      data-image="https://i.pinimg.com/1200x/f5/da/ac/f5daaceac2ab215b32c96c8bd3edd337.jpg">
+      <img src="https://i.pinimg.com/1200x/f5/da/ac/f5daaceac2ab215b32c96c8bd3edd337.jpg">
+      <div class="poster-info">
+        <h4>The Devil Wears Prada</h4>
+        <p>Click to view details</p>
+      </div>
+    </div>
+
+    <div class="poster"
+      data-title="The First Frost"
+      data-category="Romance • C-Drama"
+      data-description="An emotional rollercoaster balancing drama and romance beautifully."
+      data-link="https://youtu.be/am6kaxykZlE?si=I5sJzAXLl7DKPYmF"
+      data-image="https://i.pinimg.com/736x/3b/19/36/3b19369d59c6a5be00aea04c789fb703.jpg">
+      <img src="https://i.pinimg.com/736x/3b/19/36/3b19369d59c6a5be00aea04c789fb703.jpg">
+      <div class="poster-info">
+        <h4>The First Frost</h4>
+        <p>Click to view details</p>
+      </div>
+    </div>
+
+    <div class="poster"
+      data-title="Mr. Queen"
+      data-category="Comedy • Historical"
+      data-description="A chaotic and hilarious body-swap historical drama."
+      data-link="https://youtu.be/H1vplUsGDoI?si=bQbEY06zSm0xYFBg"
+      data-image="https://i.pinimg.com/736x/ba/46/84/ba46845241cb8db895f8dddb94f6bd3d.jpg">
+      <img src="https://i.pinimg.com/736x/ba/46/84/ba46845241cb8db895f8dddb94f6bd3d.jpg">
+      <div class="poster-info">
+        <h4>Mr. Queen</h4>
+        <p>Click to view details</p>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+<footer class="site-footer">
+  <p>𝘾𝙧𝙚𝙖𝙩𝙚𝙙 𝙗𝙮 𝙉𝙖𝙣𝙣𝙖𝙥𝙖𝙩 𝙅𝙖𝙧𝙤𝙚𝙣𝙩𝙚𝙚𝙧𝙖𝙬𝙤𝙣𝙜 | 2025</p>
+  <p>
+    <a href="home.html">𝖧𝗈𝗆𝖾</a> |
+    <a href="reviews.html">𝖱𝖾𝗏𝗂𝖾𝗐𝗌</a> |
+    <a href="about.html">𝖠𝖻𝗈𝗎𝗍</a> |
+    <a href="game.html">𝖦𝖺𝗆𝖾</a>
+  </p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

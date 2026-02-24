@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="about-page">
+
+<nav class="top-nav" aria-label="Main navigation">
+    <a class="logo" href="home.html">My Hobby</a>
+    <ul class="nav-links">
+        <li><a href="home.html">𝖧𝗈𝗆𝖾</a></li>
+        <li><a href="reviews.html">𝖱𝖾𝗏𝗂𝖾𝗐𝗌</a></li>
+        <li><a href="about.html" aria-current="page">𝖠𝖻𝗈𝗎𝗍</a></li>
+        <li><a href="game.html">𝖦𝖺𝗆𝖾</a></li>
+    </ul>
+</nav>
+
+<section class="page-header">
+    <h1>About My Movie Hobby</h1>
+    <p>Movies and series are more than entertainment — they are comfort, inspiration, and a way to explore different emotions and cultures.</p>
+</section>
+
+<main class="about-main">
+<div class="dashboard">
+    <div class="widget">
+        <div class="icon">🎬</div>
+        <h3>My Hobby</h3>
+        <div class="widget-value">Movies</div>
+        <p>Watching movies helps me relax and enjoy my free time.</p>
+    </div>
+
+    <div class="widget">
+        <div class="icon">🌙</div>
+        <h3>Best Time</h3>
+        <div class="widget-value">Evening</div>
+        <p>I enjoy watching movies at night after a long day.</p>
+    </div>
+
+    <div class="widget">
+        <div class="icon">💙</div>
+        <h3>Favorite Genre</h3>
+        <div class="widget-value">Romcom</div>
+        <p>Romantic and comedy stories are my favorite.</p>
+    </div>
+
+    <div class="widget widget-large">
+        <h3>Why I Love Watching Movies</h3>
+        <p>Movies help me relax, understand emotions, and escape stress.</p>
+        <div class="list">
+            <div class="list-item">Emotional connection and storytelling</div>
+            <div class="list-item">Exploring different cultures and perspectives</div>
+            <div class="list-item">Finding daily comfort and inspiration</div>
+        </div>
+    </div>
+
+    <div class="widget">
+        <div class="icon">🗣️</div>
+        <h3>Preferred Audio</h3>
+        <div class="widget-value">Original</div>
+        <p>I prefer original audio with subtitles for authentic emotions.</p>
+    </div>
+
+    <div class="widget comfort-card">
+        <div class="icon">🍿</div>
+        <h3>Best Experience</h3>
+        <div class="widget-value">Comfort</div>
+        <p>A quiet place and good subtitles make it better.</p>
+    </div>
+
+    <div class="widget">
+        <div class="icon">⏳</div>
+        <h3>Watch Duration</h3>
+        <div class="widget-value">2-3 hrs</div>
+        <p>My ideal movie session is one film or 2 drama episodes each night.</p>
+    </div>
+
+    <div class="widget table-card">
+        <h3>Streaming Platforms</h3>
+        <div class="table-container">
+            <table class="platform-table">
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Logo</th>
+                        <th>What I Watch</th>
+                        <th>Visit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Netflix</strong></td>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix"></td>
+                        <td>Movies & International Series</td>
+                        <td><a href="https://www.netflix.com" target="_blank" class="visit-btn">Open</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>iQIYI</strong></td>
+                        <td><img src="https://www.ais.th/content/ais/th/en_us/consumers/entertainment/streaming-app/iqiyi/_jcr_content/root/container_1816311984/aiscontainer/columncontrol_copy_c/content1/image.coreimg.svg/1688975099713/logo-iqiyi.svg" alt="iQIYI"></td>
+                        <td>C-dramas & Asian Variety</td>
+                        <td><a href="https://www.iq.com" target="_blank" class="visit-btn">Open</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Viu</strong></td>
+                        <td><img src="https://www.ais.th/content/ais/th/th_th/consumers/entertainment/streaming-app/viu/_jcr_content/root/container_1816311984/aiscontainer/columncontrol_copy_c/content1/image.coreimg.svg/1742182312179/logo-viu.svg" alt="Viu"></td>
+                        <td>Latest K-dramas</td>
+                        <td><a href="https://www.viu.com" target="_blank" class="visit-btn">Open</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="widget recommend-card" id="recommend-form">
+        <div class="icon">✉️</div>
+        <h3>Your Recommendations</h3>
+        <p>What should I watch next? Share your favorite romcoms or dramas!</p>
+
+        <form id="recommendation-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="title">Movie/Series Title</label>
+                    <input type="text" id="title" placeholder="e.g. Hometown Cha-Cha-Cha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Category</label>
+                    <select id="type">
+                        <option value="movie">Movie</option>
+                        <option value="cdrama">C-Drama</option>
+                        <option value="kdrama">K-Drama</option>
+                        <option value="series">International Series</option>
+                    </select>
+                </div>
+
+                <div class="form-group-full">
+                    <label for="reason">Why do you recommend it?</label>
+                    <textarea id="reason" rows="4" placeholder="Tell me about the story..."></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Recommendation</button>
+        </form>
+
+        <div id="thank-you-msg" style="display:none; margin-top: 2rem;">
+            <h3>Thank you!</h3>
+            <p>I've received your recommendation and added it to my list.</p>
+        </div>
+    </div>
+</div>
+</main>
+
+<footer class="site-footer">
+    <p>𝘾𝙧𝙚𝙖𝙩𝙚𝙙 𝙗𝙮 𝙉𝙖𝙣𝙣𝙖𝙥𝙖𝙩 𝙅𝙖𝙧𝙤𝙚𝙣𝙩𝙚𝙚𝙧𝙖𝙬𝙤𝙣𝙜 | 2025</p>
+    <p>
+        <a href="home.html">𝖧𝗈𝗆𝖾</a> |
+        <a href="reviews.html">𝖱𝖾𝗏𝗂𝖾𝗐𝗌</a> |
+        <a href="about.html">𝖠𝖻𝗈𝗎𝗍</a> |
+        <a href="game.html">𝖦𝖺𝗆𝖾</a>
+    </p>
+</footer>
+
+<script>
+    document.getElementById('recommendation-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        this.style.display = 'none';
+        document.getElementById('thank-you-msg').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
