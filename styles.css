@@ -1718,3 +1718,34 @@ main,
 .about-page .recommend-card label {
   color: #ffffff !important;
 }
+
+/* Page enter animation (all pages) */
+.page-enter-ready .page-enter-item {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.page-enter-ready.page-enter-start .page-enter-item {
+  animation: pageEnterFade 0.7s ease forwards;
+  animation-delay: var(--enter-delay, 0ms);
+}
+
+@keyframes pageEnterFade {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-enter-ready .page-enter-item,
+  .page-enter-ready.page-enter-start .page-enter-item {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
