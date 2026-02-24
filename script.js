@@ -1,12 +1,31 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
+  initPageEnterAnimation();
   initMemoryGame();
   initMovieQuiz();
   initHomeMood();
   initHomeScrollAnimation();
   initReviewsPosters();
 });
+
+function initPageEnterAnimation() {
+  const items = document.querySelectorAll(".top-nav, .hero, .page-header, main > *, .site-footer");
+  if (!items.length) return;
+
+  document.body.classList.add("page-enter-ready");
+
+  items.forEach((item, index) => {
+    item.classList.add("page-enter-item");
+    item.style.setProperty("--enter-delay", `${Math.min(index * 90, 720)}ms`);
+  });
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      document.body.classList.add("page-enter-start");
+    });
+  });
+}
 
 function initMemoryGame() {
   const memoryGrid = document.getElementById("memory-grid");
